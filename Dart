@@ -1,1 +1,54 @@
+// Q1
+// the "var " keyword is missing , in addition the variable "hour" is defined as a constant variable so the value does not change during the program execution .
+// correction :
+void main() {
 
+  var hour = DateTime.now().hour;
+  print(hour);
+}
+
+//Q2
+
+class Animal {
+
+void printName() {}
+void printSound() {}
+
+}
+
+class Dog extends Animal {
+
+@OverRide void printName() {
+print("Dog");
+}
+@OverRide void printSound() {
+print("barking");
+}
+
+}
+
+class Cat extends Animal {
+ void printName() {
+print("Cat ");
+}
+ void printSound() {
+print("miaow");
+}
+}
+class Cow extends Animal {
+void printName() {
+print("Cow");
+}
+void printSound() {
+print("mooing");
+}
+
+}
+
+void main() {
+
+  Cow cowObject = Cow(); 
+cowObject.printName();
+cowObject.printSound();
+
+}
