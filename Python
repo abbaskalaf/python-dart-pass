@@ -1,1 +1,25 @@
 
+def funciton() :
+    print("Enter x value"); 
+    
+    array =[]
+    for i in range(4):
+        x = input();
+        num =int(x);
+        if num>0 and num<=10:
+           array.append(num)
+        else: 
+           print("invalid input")
+    
+    
+    
+    for i in array:
+        if(i%2 ==0 ):
+            print(str(i)+"is even")
+            
+        else :
+            print(str(i)+"is odd")
+            
+    
+funciton()
+
